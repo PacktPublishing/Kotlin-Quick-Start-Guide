@@ -1,0 +1,37 @@
+<build>
+   <plugins>
+       <plugin>
+           <artifactId>kotlin-maven-plugin</artifactId>
+           <groupId>org.jetbrains.kotlin</groupId>
+           <version>${kotlin.version}</version>
+           <executions>
+               <execution>
+                   <id>compile</id>
+                   <goals> <goal>compile</goal> </goals>
+                   <configuration>
+                       <sourceDirs>
+                           <sourceDir>${project.basedir}/src/main/kotlin</sourceDir>
+                           <sourceDir>${project.basedir}/src/main/java</sourceDir>
+                       </sourceDirs>
+                   </configuration>
+               </execution>
+           </executions>
+       </plugin>
+       <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-compiler-plugin</artifactId>
+           <version>3.5.1</version>
+           <executions>
+               <execution>
+                   <id>default-compile</id>
+                   <phase>none</phase>
+               </execution>
+               <execution>
+                   <id>java-compile</id>
+                   <phase>compile</phase>
+                   <goals> <goal>compile</goal> </goals>
+               </execution>
+           </executions>
+       </plugin>
+   </plugins>
+</build>
