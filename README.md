@@ -40,7 +40,7 @@ The code will look like the following:
 **Following is what you need for this book:**
 This book is intended for anybody who wants to learn the most important Kotlin features. No experience of Kotlin is expected.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-15).
+With the following software and hardware list you can run all code files present in the book (Chapter 1-7).
 
 ### Software and Hardware List
 
